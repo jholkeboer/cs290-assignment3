@@ -7,6 +7,6 @@ Tasks: finished variables.js
 Start: Tue, 21 Apr 2015 18:15:00 -0700
 End: Tue, 21 Apr 2015 19:21:31 -0700
 Tasks: finished objects.js
-Start: Tue, 21 Apr 2015 19:22:00 -0700
+Start: Tue, 21 Apr 2015 19:45:00 -0700
 End: Tue, 21 Apr 2015 20:30:23 -0700
 Tasks: all tests passing
