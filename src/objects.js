@@ -9,9 +9,9 @@
 	*/
 
 	function returnObjectLiteral() {
-	  //your code here
-	  return { type: 'Goldfish', brand: 'Pepperidge Farm', flavor: 'Cheddar', count: 2000}; //Modify ONLY this line
-	  //end your code
+	//your code here
+		return { type: 'Goldfish', brand: 'Pepperidge Farm', flavor: 'Cheddar', count: 2000}; //Modify ONLY this line
+	//end your code
 	}
 
 	/**
@@ -41,7 +41,7 @@
 	function MessageLog(user){
 		this.user = user;
 		this.outbox = ['','','','',''];	//array to hold sent messages
-		this.mostRecent = 'blah';			//holds most recently received message
+		this.mostRecent = '';			//holds most recently received message
 		this.numberSent = 0;
 		this.numberReceived = 0;
 		this.logMessage = function(messageText, direction) {
@@ -56,8 +56,8 @@
 					this.outbox[0] = messageText;
 				}
 				else {
-					for (i=4; i > 0; i--) {
-						this.outbox[i] = this.outbox[i-1];
+					for (i = 4; i > 0; i--) {
+						this.outbox[i] = this.outbox[i-1];	//shift elements
 					}
 					this.outbox[0] = messageText;
 				}
@@ -101,14 +101,4 @@
 	myLog.logMessage("bar", 1);
 	myLog.logMessage("baz", 1);
 	//below is for testing.
-	var testLog = new MessageLog("tester");
-	testLog.logMessage('I 1', 1);
-	testLog.logMessage('I 2', 1);
-	testLog.logMessage('I 3', 1);
-	testLog.logMessage('S 0', 0);
-	testLog.logMessage('S 1', 0);
-	testLog.logMessage('S 2', 0);
-	testLog.logMessage('S 3', 0);
-	testLog.logMessage('S 4', 0);
-	testLog.logMessage('S 5', 0);
 	//end your code
